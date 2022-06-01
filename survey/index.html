@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Survey</title>
+	<link rel="stylesheet" href="../src/libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="../src/css/styles.css">
+</head>
+
+<body>
+	<div class="container-fluid">
+		<navbar class="row justify-content-around">
+			<div class="col-3">
+				<div class="row">
+					<img src="../src/img/logo.png" alt="" id="logo">
+				</div>
+			</div>
+			<div class="col-2">
+				<div class="row">
+					<span style="color: #fff;">Progress</span>
+					<progress max="100" value="0" id="pb-navbar"> </progress>
+				</div>
+			</div>
+		</navbar>
+		<main class="row">
+			<div class="col-12">
+				<div class="row justify-content-between align-items-center my-4">
+					<div class="offset-2 col-2">
+						<div class="row">
+							<p id="percentaje"></p>
+							<progress max="100" value="0" id="pb-main"></progress>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="row">
+							<h1>SCORE</h1>
+							<h2 id="score">0</h2>
+						</div>
+					</div>
+				</div>
+
+				<div class="row my-2">
+					<div class="col-12 text-center">
+						<div class="row text-center">
+							<h1 id="title"></h1>
+						</div>
+
+						<div class="row">
+							<p id="content">
+
+							</p>
+						</div>
+
+						<div class="row justify-content-center my-4">
+							<div class="col-10">
+								<div class="row justify-content-between my-2">
+									<span class="col-4">Strongly Degree</span>
+									<span class="col-4">Strongly Agree</span>
+								</div>
+
+								<div class="row justify-content-center">
+									<div class="col-2 mr-1">
+										<div class="row justify-content-center">
+											<div class="col-12 box" data-score="1">
+											</div>
+											<span class="text-center">1</span>
+										</div>
+									</div>
+									<div class="col-2 mr-1">
+										<div class="row justify-content-center">
+											<div class="col-12 box" data-score="2">
+											</div>
+											<span class="text-center">2</span>
+										</div>
+									</div>
+									<div class="col-2 mr-1">
+										<div class="row justify-content-center">
+											<div class="col-12 box" data-score="3">
+											</div>
+											<span class="text-center">3</span>
+										</div>
+									</div>
+									<div class="col-2 mr-1">
+										<div class="row justify-content-center">
+											<div class="col-12 box" data-score="4">
+											</div>
+											<span class="text-center">4</span>
+										</div>
+									</div>
+									<div class="col-2 mr-1">
+										<div class="row justify-content-center">
+											<div class="col-12 box" data-score="5">
+											</div>
+											<span class="text-center">5</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<span id="total-score">
+
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+	<script src="../src/libs/jquery/jquery.min.js"></script>
+	<script src="../src/libs/bootstrap/bootstrap.min.js"></script>
+	<script src="../src/libs/bootstrap/bundle.min.js"></script>
+	<script src="../src/js/general-script.js"></script>
+</body>
+
+</html>
